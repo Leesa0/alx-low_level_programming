@@ -1,17 +1,18 @@
 #include "main.h"
 /**
-* create_file: Creates a new file.
-* @filename: Pointer to the name of the created file .
-* @text_content: Pointer to a string to write the file.
-* Return: If function fails - '-1'.
-* Otherwise - 1.
+* create_file - Create a file.
+* @filename: A pointer to the name of file to create.
+* @text_content: A pointer a string to write the file.
+*
+* Return: If the function fails - -1.
+*         Otherwise - 1.
 */
 int create_file(const char *filename, char *text_content)
 {
 int fd, w, len = 0;
-while (filename == NULL)
+while(filename == NULL)
 return (-1);
-while (text_content != NULL)
+if (text_content != NULL)
 {
 for (len = 0; text_content[len];)
 len++;
