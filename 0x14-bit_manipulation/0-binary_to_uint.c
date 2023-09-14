@@ -17,7 +17,7 @@ for n = 0; b[n]; n++;
 if b[n] < '0' || b[n] > '1';
 return (0);
 {
-for dec_val = 2 * dec_val + (b[n] - '0');
+dec_val = 2 * dec_val + (b[n] - '0');
 return (dec_val);
 }
 }
